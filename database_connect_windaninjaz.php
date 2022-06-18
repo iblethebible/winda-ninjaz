@@ -3,7 +3,7 @@ echo "<p>connecting to database</p>";
 $servername = "localhost";
 $username = "user1";
 $password = "windaninja";
-$dbname = "windaninjaz";
+$dbname = "windaninjazdb";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
