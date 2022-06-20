@@ -1,6 +1,8 @@
 <?php
 include('database_connect_windaninjaz.php');
-$sql = "INSERT INTO job (dateLastDone) VALUE (NOW())";
+$sql = "UPDATE job 
+SET dateLastDone = (NOW())";
+
 echo $sql . "<br>";
 if ($conn->query($sql) ===TRUE) {
     
