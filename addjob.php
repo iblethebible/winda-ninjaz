@@ -13,19 +13,19 @@ if ($_GET["job_form_submit"]) {
 
 
     $sql = "INSERT INTO customer (custName, custContact) VALUES ('$var_customer_name', '$var_customer_contact')";
-    echo $sql . "<br>";
+   
     if ($conn->query($sql) ===TRUE) {
-        $last_id = $conn->insert_id;
-        echo "New record created successfully. The last inserted ID is: " . $last_id ;
-    }
+       $last_id = $conn->insert_id;
+       
+   }
     else {
         echo "Error " . $conn->error;
     }
 
     $sql2 = "INSERT INTO job (cust_id, houseNumName, streetName, price, frequency, zone_id, info) VALUES ('$last_id', '$var_job_house', '$var_job_street', '$var_job_price', '$var_job_frequency', '$var_zone_id', '$var_extra_info')";
-    echo $sql2 . "<br";
+    
     if ($conn->query($sql2) ===TRUE) {
-        echo "New record created successfully.";
+        
     }
     else {
         echo "Error " . $conn->error;
@@ -42,15 +42,22 @@ if ($_GET["job_form_submit"]) {
     </head>
     <body>
         <h1>Add a new job</h1>
+        <a href="getjob.php">Get Job</a>
         <form action="addJob.php" method="get">
-            Customer Name: <input type="text" name="customer_name_form"><br>
-            Customer Contact Details: <input type="text" name="customer_contact_details"><br>
+        
             House number or name: <input type="text" name="job_house_number_name"><br>
             Street Name: <input type="text" name="job_street_name"><br>
             Price: <input type="number" name="job_price"><br>
             Frequency: <input type="number" name="job_frequency"><br>
             Zone: <select name = "zone">
-                <option value = "1" selected>Copthorne</option>
+                <option value = "1" selected>Bayston Hill</option>
+                <option value = "2" selected>Bell Vue</option>
+                <option value = "3" selected>Copthorne</option>
+                <option value = "4" selected>Meole</option>
+                <option value = "5" selected>Monkmoor</option>
+                <option value = "6" selected>Mount Pleasant</option>
+                <option value = "7" selected>Radbrook</option>
+                <option value = "8" selected>Sundorne</option>
                 </select><br>
             Extra info: <input type="text" name="job_extra_info"><br>
             <input type="submit" name="job_form_submit" value="Submit">
