@@ -28,3 +28,4 @@ I want a robust system to store all of the jobs and tell me when they are due to
 For the database i will use MYSQL and for the front end i will use html and css. Maybe bootstrap.
 
 I am unsure as to whether or not my system will be connected to internet or not as it would work locally on an android device. The risks of locally are that if the device breaks we lose our system. Would need constant back ups. The costs of having it connected to the internet are vast. Could use AWS maybe.
+
