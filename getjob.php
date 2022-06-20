@@ -6,15 +6,15 @@ include('database_connect_windaninjaz.php');
     <head><title>Current Job</title></head>
     <body>
         <h1>
-            Get Jobs
+            Get Job
         </h1>
         <h2>
         <?php
-        echo date('jS F Y');
+        
         ?>
         </h2>
-        <a href="addjob.php">Add a job</a>
-        <a href="queryjob.php">All Jobs</a>
+        <a href="addjob.php">Add job</a>
+        
         <form action = "getjob.php" method = "get">
         What zone are you in? <select name = "zone">
                 <option value = "1" selected>Bayston Hill</option>
@@ -34,7 +34,6 @@ include('database_connect_windaninjaz.php');
         $sql = "SELECT * 
         FROM job 
         WHERE job.zone_id = $var_zone_id"; 
-        echo "<p>The SQL is: " . $sql . "</p>";
         $result = $conn->query($sql);
         }
         if ($result->num_rows > 0) {
