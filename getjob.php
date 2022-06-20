@@ -8,6 +8,11 @@ include('database_connect_windaninjaz.php');
         <h1>
             Get Jobs
         </h1>
+        <h2>
+        <?php
+        echo date('jS F Y');
+        ?>
+        </h2>
         <a href="addjob.php">Add a job</a>
         <a href="queryjob.php">All Jobs</a>
         <form action = "getjob.php" method = "get">
@@ -37,7 +42,10 @@ include('database_connect_windaninjaz.php');
             echo '<tr>';
             echo '<th>Name</th>';
             echo '<th>Address</th>';
-            
+            echo '<th></th>';
+            echo '<th>Price</th>';
+           // echo '<th>Last Done</th>';
+            echo '<th>COMPLETED</th>';
             
             echo '</tr>';
         
@@ -47,10 +55,13 @@ include('database_connect_windaninjaz.php');
                 echo '<td>' . $row["custName"] . '</td>';
                 echo '<td>' . $row["houseNumName"] . '</td>';
                 echo '<td>' . $row["streetName"] . '</td>';
+                echo '<td>' . $row["dateLastDone"] . '</td>';
+                echo '<td><a href="jobcomplete.php?job=' . $row["id"] . '">COMPLETE</a></td>';
             }
                 echo '</tr>' ;
                 echo '</table>';                     
-        }
+        
+            }
         ?>
     </body>
 </html> 
