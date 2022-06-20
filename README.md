@@ -4,24 +4,25 @@ Database and front-end for window cleaning firm
 
 A database which will store
 Job details
-  * price
-  *location
-  *how often they want it
-  *date was last completed/date of next clean
-  *extra info
+  * Price
+  * Location
+  * Frequency
+  * Date was last completed/date of next clean
+  * Extra info
 Customer details
-  *Name
-  *Contact info
+  * Name
+  * Contact info
   
 Front end:
-Add customer/job
-Search customer/job
-Delete customer/job
-Work day page which shows which jobs need doing in certain area
+* Add customer/job
+* Search customer/job
+* Delete customer/job
+* Work day page which shows which jobs need doing in certain area
 
 
 What do i want to achieve?
-In its basic form i want to have a front end in which i can select a certain zone in my home town and the system will tell me all of the jobs which are due to be done in that area.
+I want a robust system to store all of the jobs and tell me when they are due to be cleaned. I want to have a front end in which i can select a certain zone in my home town and the system will tell me all of the jobs which are due to be done in that area. Also track money made on the day. 
+
 
 
 For the database i will use MYSQL and for the front end i will use html and css. Maybe bootstrap.
