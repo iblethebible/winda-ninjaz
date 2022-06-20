@@ -1,8 +1,8 @@
-# winda-ninjaz
-Database and front-end for window cleaning firm
+#Window Cleaning System
+##Database and front-end for window cleaning firm
 
 
-A database which will store:
+A database which will store
 Job details
   -price
   -location
