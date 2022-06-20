@@ -4,14 +4,14 @@ Database and front-end for window cleaning firm
 
 A database which will store
 Job details
-  price
-  location
-  how often they want it
-  date was last completed/date of next clean
-  extra info
+  * price
+  *location
+  *how often they want it
+  *date was last completed/date of next clean
+  *extra info
 Customer details
-  -Name
-  -Contact info
+  *Name
+  *Contact info
   
 Front end:
 Add customer/job
