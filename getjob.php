@@ -54,6 +54,7 @@ include('database_connect_windaninjaz.php');
                 echo '<td>' . $row["custName"] . '</td>';
                 echo '<td>' . $row["houseNumName"] . '</td>';
                 echo '<td>' . $row["streetName"] . '</td>';
+                echo '<td>£' . $row["price"] . '</td>';
                 echo '<td>' . $row["dateLastDone"] . '</td>';
                 echo '<td><a href="jobcomplete.php?job=' . $row["id"] . '">COMPLETE</a></td>';
             }
