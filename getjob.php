@@ -29,11 +29,13 @@ include('database_connect_windaninjaz.php');
                 <input type="submit" name="getjob_form_submit" value="Submit">
         </form>
 <?php
+    
     if ($_GET["getjob_form_submit"]) {
         $var_zone_id = $_GET["zone"];            
         $sql = "SELECT * 
         FROM job 
-        WHERE job.zone_id = $var_zone_id"; 
+        WHERE job.zone_id = $var_zone_id
+        ORDER BY dateLastDone ASC"; 
         $result = $conn->query($sql);
         }
         if ($result->num_rows > 0) {
@@ -56,7 +58,7 @@ include('database_connect_windaninjaz.php');
                 echo '<td>' . $row["streetName"] . '</td>';
                 echo '<td>£' . $row["price"] . '</td>';
                 echo '<td>' . $row["dateLastDone"] . '</td>';
-                echo '<td><a href="jobcomplete.php?job=' . $row["id"] . '">COMPLETE</a></td>';
+                echo '<td><a href="jobcomplete.php?job=' . $row["id"] . '"><b>COMPLETE</b>-</a></td>';
             }
                 echo '</tr>' ;
                 echo '</table>';                     
