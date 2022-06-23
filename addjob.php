@@ -53,7 +53,7 @@ if ($_GET["job_form_submit"]) {
                 <option value = "1" selected>Bayston Hill</option>
                 <option value = "2" selected>Bell Vue</option>
                 <option value = "3" selected>Copthorne</option>
-                <option value = "4" selected>Meole</option>
+                <option value = "4" selected>Meole/Sutton</option>
                 <option value = "5" selected>Monkmoor</option>
                 <option value = "6" selected>Mount Pleasant</option>
                 <option value = "7" selected>Radbrook</option>
