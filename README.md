@@ -29,3 +29,6 @@ For the database i will use MYSQL and for the front end i will use html and css.
 
 I am unsure as to whether or not my system will be connected to internet or not as it would work locally on an android device. The risks of locally are that if the device breaks we lose our system. Would need constant back ups. The costs of having it connected to the internet are vast. Could use AWS maybe.
 
+23/06/2022
+I have decided that i will push on with the local plan until i have inputted all of the customers data. From there i will likely migrate it to an AWS myswl DB utilising their 12 month free trial. I am now looking at android studio and learning to develop a simple App for the front end.
+
