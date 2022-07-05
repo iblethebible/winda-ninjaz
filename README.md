@@ -1,3 +1,6 @@
+<b>I have moved to AWS and all work being completed on there now.</b>
+
+
 Window Cleaning System
 Database and front-end for window cleaning firm
 
