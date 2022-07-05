@@ -1,5 +1,6 @@
 ---------------------------------------------------------------------
 <b>I have moved to AWS and all work being completed on there now.</b>
+I will be using react to build the application
 ---------------------------------------------------------------------
 
 Window Cleaning System
